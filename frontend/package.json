@@ -1,0 +1,75 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@editorjs/editorjs": "^2.30.7",
+    "@editorjs/header": "^2.8.8",
+    "@editorjs/image": "^2.10.1",
+    "@editorjs/list": "^2.0.2",
+    "@editorjs/paragraph": "^2.11.6",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@lexical/react": "^0.23.1",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/lab": "^5.0.0-alpha.155",
+    "@mui/material": "^5.16.7",
+    "@mui/x-date-pickers": "^6.5.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "apexcharts": "3.44.2",
+    
+    "axios": "^1.4.0",
+    "dayjs": "^1.11.10",
+    "dompurify": "^3.1.7",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
+    "froala-editor": "^4.3.1",
+    "openai": "^4.76.2",
+    "immutable": "^4.3.7",
+    "js-md5": "^0.8.3",
+    "lexical": "^0.23.1",
+    "react": "^18.2.0",
+    "react-auth-kit": "^2.12.2",
+    "react-dom": "^18.2.0",
+    "react-draft-wysiwyg": "^1.15.0",
+    "react-froala-wysiwyg": "^4.3.1",
+    "react-graph-vis": "^1.0.7",
+    "react-icons": "^4.8.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.28.2",
+    "react-scripts": "^5.0.1",
+    "react-use-websocket": "^4.5.0",
+    "react-vis-network-graph": "^3.0.1",
+    "redux": "^4.2.1",
+    "socket.io-client": "^4.7.2",
+    "uuid": "^8.3.2",
+    "vis-data": "^7.1.7",
+    "vis-network": "^9.1.8",
+    "ajv-keywords": "3.5.2",
+    "schema-utils": "2.7.0",
+    "web-vitals": "^2.1.4",
+    
+    "@notionhq/client": "^2.2.15"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

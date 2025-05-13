@@ -1,0 +1,8 @@
+**/node_modules
+db_data
+pgadmin_data
+.env
+uploads
+*.pyc
+testenv
+nginx/logs

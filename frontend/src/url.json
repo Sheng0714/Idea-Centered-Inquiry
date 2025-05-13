@@ -1,0 +1,5 @@
+{
+  "backendHost": "https://icit.lazyinwork.com/api/",
+  "socketioHost": "https://icit.lazyinwork.com/"
+}
+
