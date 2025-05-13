@@ -1,4 +1,4 @@
-# version: "3"
+version: "3"
 services:
   nginx:
     image: nginx:latest
@@ -16,7 +16,7 @@ services:
       - frontend
       - backend
       - websocket-srv
-      - notion-backend # 添加依賴
+      - notion-backend
 
   backend:
     build:
@@ -40,15 +40,13 @@ services:
     build:
       context: notion-backend
       dockerfile: Dockerfile
-    
-      env_file: ./frontend/.env
-
-
     restart: always
     ports:
       - "4000:4000"
     depends_on:
       - db
+    env_file:
+      - ./frontend/.env  # 放到這裡
 
   db:
     image: postgres:13.2-alpine
@@ -58,10 +56,8 @@ services:
       POSTGRES_USER: wulab #<USERNAME> 
       POSTGRES_PASSWORD: ytwu35415 #<USERPSW> 
       PGDATA: /var/lib/postgresql/data
-
     volumes:
       - db_data:/var/lib/postgresql/data
-      # - "./pg.conf:/etc/postgresql/postgresql.conf"
     ports:
         - "5432:5432"
 
@@ -96,6 +92,7 @@ services:
       # Fixes bug where websocket connection is fixed to default port 3000
       - WDS_SOCKET_PORT=0
       - NODE_ENV=production
+
   websocket-srv:
     build:
       context: socketio-server
@@ -104,13 +101,12 @@ services:
     restart: always
     ports:
         - "3030:3030"
-volumes:
-    db_data:
-    pgadmin_data:
-    certs: 
-    certs-data: 
-    
 
+volumes:
+  db_data:
+  pgadmin_data:
+  certs: 
+  certs-data: 
 
 networks:
   frontend:
