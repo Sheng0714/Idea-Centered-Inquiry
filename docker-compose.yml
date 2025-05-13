@@ -41,8 +41,8 @@ services:
       context: notion-backend
       dockerfile: Dockerfile
     
-      env_file:
-         - ./frontend/.env
+      env_file: ./frontend/.env
+
 
     restart: always
     ports:
