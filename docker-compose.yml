@@ -38,8 +38,8 @@ services:
 
   notion-backend:
     build:
-      context: notion-backend
-      dockerfile: Dockerfile
+      context: .  # 設為專案根目錄
+      dockerfile: notion-backend/Dockerfile
     restart: always
     ports:
       - "4000:4000"
